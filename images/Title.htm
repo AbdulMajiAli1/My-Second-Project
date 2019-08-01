@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5501/bootstrap4.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Title_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Title_files/all.min.css">
+    <link rel="stylesheet" href="./Title_files/style.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light ">
+        <div class="navbar-brand"><span class="display-6 text-uppercase">Photo</span><span class="display-5">X</span>
+        </div>
+        <button class="navbar-toggler btn btn-dark" type="button" id="#myNavbar" data-toggle="collapse">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav ">
+            <li class="nav-item">
+                <a class="nav-link active" href="http://127.0.0.1:5501/bootstrap4.html#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5501/bootstrap4.html#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="http://127.0.0.1:5501/bootstrap4.html#">Disabled</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="http://127.0.0.1:5501/bootstrap4.html#">Disabled</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="http://127.0.0.1:5501/bootstrap4.html#">Disabled</a>
+            </li>
+        </ul>
+     </div>
+    </nav>
+
+    <script src="./Title_files/jquery.slim.min.js"></script>
+    <script src="./Title_files/popper.min.js"></script>
+    <script src="./Title_files/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./Title_files/script.js">
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
